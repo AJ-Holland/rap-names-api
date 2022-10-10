@@ -33,7 +33,7 @@ app.get('/api/:name',(response,request)=>{
     }
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.Port || PORT, ()=>{
     console.log(`The server is now running on port ${PORT}! Better go catch it!`)
 })
 // we did it!
